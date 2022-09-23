@@ -6,7 +6,7 @@
 
 :root {
     --font-title: 'Press Start 2P', cursive;
-    --font-p: 'Bai Jamjuree', sans-serif;
+    --font-p: 'Roboto Serif', serif;
     --color-white: white;
     --color-black: black;
 }
@@ -67,6 +67,7 @@ section:nth-of-type(1) {
     border-color: #f7fbd1;
     background-color: #1e5046;
     color: var(--color-white);
+    font-family: var(--font-p);
 }
 
 .dia1-btn:hover {
@@ -78,7 +79,7 @@ section:nth-of-type(1) {
 
 .dia1-btn:focus {
     background-color: #020706;
-    border-color: #f5ffa7;
+    border-color: #f8ff76;
     font-weight: bolder;
     transform: scale(1.1);
 }

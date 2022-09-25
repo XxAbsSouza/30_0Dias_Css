@@ -21,6 +21,7 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: var(--font-p);
+    line-height: 2.5rem;
 }
 
 
@@ -51,9 +52,10 @@ h1 {
 .content {
     position: absolute;
     top: 50%;
+    margin-top: -2.5rem;
 }
 
-/* --------- Dia 1 -----------*/
+/* ------------------- Dia 1 ----------------------*/
 section:nth-of-type(1) {
     background: linear-gradient(to right, #F8FFAE, #43C6AC);
 }
@@ -68,9 +70,8 @@ section:nth-of-type(1) {
     background-color: #1e5046;
     color: var(--color-white);
     font-family: var(--font-p);
-    line-height: 2.5rem;
     font-size: 1.6rem;
-    transition-duration: 1s;
+    transition: 0.8s ease-in-out;
 }
 
 .dia1-btn:hover {
@@ -92,20 +93,95 @@ section:nth-of-type(1) {
 }
 
 .dia1-btn:hover::after {
-    content: "🍒 ~Now click me~"!important;
+    content: "🍒 ~Now click me~" !important;
 }
 
 .dia1-btn:focus::after {
     content: "🐱‍👤 Iam clicked" !important;
 }
 
-/* --------- Dia 2 -----------*/
-
-
+/* -------------------- Dia 2 -----------------------*/
 section:nth-of-type(2) {
     background: linear-gradient(to right, #ffc3a0, #FFAFBD);
 }
 
+.content-2 {
+    top: 50%;
+    margin-top: -2.5rem;
+}
+
+label {
+    cursor: pointer;
+}
+
+.msg {
+    width: 100vw;
+    background: #0D0D08;
+    padding: 3rem 6rem;
+    height: 30rem;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    top: -25rem;
+    left: 0;
+    visibility: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    top: 2.5rem;
+    left: 2.5rem;
+}
+
+input[type=checkbox]:checked~.msg {
+    top: 0;
+    visibility: visible;
+
+}
+
+.day2btn {
+    position: relative;
+    top: calc(100vh - 50vh);
+    background: #2e241e;
+    padding: 2rem 5rem;
+    border-radius: 3rem;
+    color: var(--color-white);
+    border: 0.16rem outset #ffd0b4;
+    transition: 1s;
+}
+
+.day2btn:hover {
+    border-color: #2e241e;
+    background: #fbc0ca6f;
+    color: #2e241e;
+    font-weight: bold;
+}
+
+.tenor-gif-embed {
+    max-height: 23rem;
+    max-width: 50rem;
+}
+
+.msg-text {
+    margin-top: 14rem;
+    text-align: center;
+    color: var(--color-white);
+    letter-spacing: 0.4rem;
+    line-height: 5rem;
+}
+
+.julius {
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+
+
+/* --------- Dia 3 -----------*/
 section:nth-of-type(3) {
     background-image: linear-gradient(to bottom, #fccb90 0%, #d57eeb 100%);
 }
